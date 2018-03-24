@@ -1,0 +1,29 @@
+include assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+block variables
+
+include common/_top-line
+include common/_head
+include common/_header
+include common/_navigation
+include common/_hero
+include common/_footer
+
+doctype html
+html
+  block head
+    +head()
+
+  body
+    .wrapper
+      block header
+        +top-line({
+          "title": "Подключайся и играй на наших серверах!"
+        })
+        +header()
+        +navigation()
+      block content
+        +hero()
+      block footer
+        +footer()

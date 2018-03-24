@@ -1,0 +1,23 @@
+mixin header()
+  +b.DIV.header
+    +e.DIV.inner
+      +e.DIV.logo
+        +b.A(href="http://index.html")
+          +b.IMG(src="./assets/img/minecraft_logo_1.png")
+      +b.DIV.contacts.--space
+        +e.DIV.item
+          +b.SPAN Админ:
+          +b.A(href="tel:+38(068) 333-22-10") +38(068) 333-22-10
+        +e.DIV.item
+          +b.A(href="tel:+38(068) 333-22-10") +38(068) 333-22-10
+        +e.DIV.item
+          +b.SPAN По донату:
+          +b.A(href="tel:+38(068) 333-22-10") 067-33-22-180
+        +e.DIV.item
+          +b.SPAN Скайп
+          +b.A(href="skype:") minecraft-km7
+      +e.DIV.buttons
+        +b.BUTTON.btn.--gradient.--size Выбрать сервер
+        +b.BUTTON.btn.--gradient.--size Случайный
+      +e.DIV.second-logo
+        +b.IMG(src="./assets/img/minecraft_logo2.png")

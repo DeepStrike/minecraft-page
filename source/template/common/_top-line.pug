@@ -1,0 +1,14 @@
+mixin top-line(data)
+  +b.DIV.top-line
+    +e.DIV.inner
+      +e.SPAN.title= data.title
+      +b.UL.socials
+        +e.LI.item
+          +e.A.link(href="http://vk.com/htmlacademy")
+            +e.SPAN.icon--vkontakte
+        +e.LI.item
+          +e.A.link(href="http://www.facebook.com")
+            +e.SPAN.icon--facebook
+        +e.LI.item
+          +e.A.link(href="http://twitter.com")
+            +e.SPAN.icon--english

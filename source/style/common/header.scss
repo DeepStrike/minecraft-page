@@ -1,0 +1,158 @@
+.header {
+	width: 100%;
+	margin-bottom: 20px;
+	&__inner {
+		@include container();
+		@include clearfix();
+		padding: 0 15px;
+	}
+
+	&__logo {
+		padding-top: 20px;
+		margin-bottom: 20px;
+		display: block;
+		width: 100%;
+		text-align: center;
+		img {
+			width: 150px;
+			height: 95px;
+			max-width: 100%;
+		}
+	}
+
+	&__buttons {
+		margin-bottom: 15px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__second-logo {
+		padding-top: 20px;
+		width: 100%;
+		padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.header {
+		
+		&__logo {
+			width: 40%;
+			float: left;
+		}
+		
+		&__buttons {
+			width: 50%;
+			float: left;
+		}
+
+		&__second-logo {
+			width: 50%;
+			float: left;
+			text-align: left;
+		}
+
+
+
+		.contacts {
+			padding-top: 13px;
+			width: 60%;
+			float: left;
+		}
+
+		.contacts__item {
+			margin-right: 0;
+			margin-left: auto;
+		}
+
+	}
+
+	.btn--size {
+		display: block;
+		margin-bottom: 14px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+@media (min-width: 576px) {
+	.header {
+		&__logo {
+			width: 25%;
+		}
+
+		.contacts {
+			width: 50%;
+		}
+
+		.contacts__item {
+			a {
+				// padding-right: 10px;
+			}
+			span {
+				// padding-left: 5px;
+			}
+		}
+
+		&__buttons {
+			padding-top: 15px;
+			width: 25%;
+		}
+
+		&__second-logo {
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+	.header {
+		margin-bottom: 0;
+
+		&__inner {
+			padding: 0;
+			max-width: 990px;
+		}
+		
+		&__logo {
+			text-align: left;
+			width: 17%;
+		}
+		&__buttons {
+			width: 16%;
+			margin-bottom: 0;
+		}
+
+		.contacts {
+			width: 29%;
+			padding-left: 20px;
+			margin-bottom: 0;
+		}
+
+		.contacts__item {
+			margin-right: 0;
+			margin-left: 0;
+			a,
+			span {
+				padding: 0;
+			}
+		}
+
+		&__second-logo {
+			padding-top: 30px;
+			width: 38%;
+			text-align: right;
+		}
+	}
+}
